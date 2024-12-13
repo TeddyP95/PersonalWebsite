@@ -53,6 +53,14 @@ main {
 .content p {
     font-size: 18px;
     margin: 0 0 20px;
+    margin-bottom: 10px;
+}
+
+.quote p {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;       /* Removes any top margin */
+    margin-bottom: 0; 
 }
 
 .social-links a {
@@ -73,3 +81,4 @@ main {
     width: 100%;
     border-radius: 8px;
 }
+
