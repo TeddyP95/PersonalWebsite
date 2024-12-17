@@ -53,22 +53,8 @@ This is a personal website project that showcases a home page, an about me page,
 
 5. Open your browser and go to `http://localhost:3000` to view the website.
 
-## Deployment
-This project is hosted on Heroku. To deploy:
-1. Commit all changes to your Git repository:
-   ```bash
-   git add .
-   git commit -m "Deploying to Heroku"
-   ```
-
-2. Push to the Heroku remote:
-   ```bash
-   git push heroku main
-   ```
-
-The site will be live at `https://<your-app-name>.herokuapp.com/`.
-
 ## Future Improvements
+- Update lorem ipsum text with actual descriptions
 - Add contact form functionality.
 - Include animations and transitions for a modern feel.
 - Improve accessibility and SEO.
