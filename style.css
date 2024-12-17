@@ -59,8 +59,8 @@ main {
 .quote p {
     font-size: 18px;
     font-style: italic;
-    margin-top: 0;       /* Removes any top margin */
-    margin-bottom: 0; 
+    margin-top: 10;       /* Removes any top margin */
+    margin-bottom: 10; 
 }
 
 .social-links a {
@@ -87,4 +87,36 @@ main {
     font-size: 18px;
     margin-top: 10px;       /* Removes any top margin */
     margin-bottom: 10px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.about-content {
+    max-width: 70%; /* Paragraph section takes 70% of width */
+}
+
+.image {
+    max-width: 25%; /* Image section takes 25% of width */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+    font-style: italic;
+    color: #555;
+    border-left: 2px solid #000000; /* Adds a vertical bar for styling */
+    padding-left: 10px;
+    margin: 10px 0;
 }
