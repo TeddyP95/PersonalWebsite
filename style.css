@@ -118,17 +118,27 @@ main {
     margin-right: 25px;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+/* Style inputs with type="text", select elements, and textareas */
+input[type=text], input[type=email], select, textarea {
     width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
+    padding: 12px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: Arial, sans-serif; /* Explicit font-family */
+    font-size: 14px; /* Explicit font-size */
+}
+
+/* Placeholder styling for consistency */
+input::placeholder, textarea::placeholder {
+    font-family: Arial, sans-serif; /* Match input and textarea fonts */
+    font-size: 14px; /* Match font size */
+    color: #888; /* Optional: Add a placeholder color */
+}
+
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
@@ -150,9 +160,29 @@ input[type=text], select, textarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
+    margin: 40px;
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
   }
+
+  #back_form {
+    margin: 50px; /* Adds 20px space on all sides */
+    padding: 10px; /* Optional: Adds space inside the article element */
+    border: 1px solid #ddd; /* Optional: Add a border for visibility */
+    border-radius: 5px; /* Optional: Rounded corners */
+    background-color: #f9f9f9; /* Optional: Background color for aesthetics */
+}
+
+/* Style the form and button for better appearance */
+#back_form form {
+    text-align: center; /* Center the button inside the form */
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
